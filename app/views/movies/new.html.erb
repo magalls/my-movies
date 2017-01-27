@@ -1,5 +1,13 @@
 <h1 class="title">Create a new movie</h1>
 
+<!--
+Partials -->
+
+<%= render partial: 'form', method: 'post', action: 'create' %>
+
+
+
+<!--
 <%= form_for @movie, url: {controller: 'movies', action: 'create'} do |f| %>
   <div class="field">
     <%= f.label :title %>
@@ -20,3 +28,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+-->
