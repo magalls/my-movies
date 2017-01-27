@@ -3,7 +3,7 @@
 </h1>
 
 
-<%= render partial: 'form', method: 'put', action: 'update' %>
+<%= render partial: 'form', locals: {method: 'put', action: 'update'} %>
 
 <!--
 <%= form_for @movie, method: "put", url: {controller: 'movies', action: 'update'} do |f| %>
