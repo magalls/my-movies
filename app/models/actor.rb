@@ -1,2 +1,3 @@
 class Actor < Professional
-end   
+  has_and_belongs_many :movies, association_foreign_key: 'movie_id', join_table: 'actors_movies'
+end
